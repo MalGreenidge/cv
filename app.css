@@ -5,8 +5,10 @@ body {
 }
 
 #hero {
-    height: 90vh;
+    display: inline-block;
+    min-height: 90vh;
     background-color: #539165;
+    color: white
 }
 
 .navbar {
@@ -49,6 +51,69 @@ body {
 .tagline {
     font-size: 4.0rem;
     letter-spacing: 1.5px;
-    color: white;
     padding: 32px 0;
+}
+
+.two-column {
+    font-size: 2rem;
+}
+
+.two-column>p
+
+/* Direct child of .two-column*/
+    {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.two-column .skills {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.two-column .skills li {
+    width: 50%;
+    float: left;
+    font-size: 1.25rem;
+    margin: 8px 0;
+}
+
+#blog {
+    background-color: white;
+    padding: 64px 0;
+
+}
+
+.blog-content {
+    padding: 0 15%;
+}
+
+.two-column .blog-post {
+    width: 50%;
+    float: left;
+}
+
+.blog-title {
+    font-size: 1.5rem;
+}
+
+.blog-text {
+    font-size: 1rem;
+}
+
+.blog-post {
+    margin-top: 24px;
+}
+
+.blog-post .blog-date {
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 32px;
+}
+
+.blog-post p {
+    margin: 8px 0;
 }
